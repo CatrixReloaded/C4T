@@ -63,3 +63,43 @@ section {
   margin: 0 auto;
   border-top: 1px solid #00ffcc;
 }
+
+/* 🔷 NFT Preview Grid Styles */
+.nft-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+  justify-items: center;
+}
+
+.nft-card {
+  background-color: #111;
+  border: 1px solid #00ffcc;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 250px;
+}
+
+.nft-card:hover {
+  transform: scale(1.05);
+}
+
+.nft-card img {
+  width: 100%;
+  max-width: 180px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.nft-card h3 {
+  margin: 10px 0 5px 0;
+}
+
+.nft-card p {
+  font-size: 14px;
+  color: #66fff0;
+}
